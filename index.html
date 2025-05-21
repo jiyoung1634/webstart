@@ -7,20 +7,23 @@
     
 
     <style>
+        html {scroll-behavior: smooth;}
         
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: rgb(255, 250, 245);
+            background-color: rgb(252, 249, 247);
             color:black;
+            opacity: 0;
+            animation: fadeIn 0.7s ease-in forwards;
         }
 
         header {
             text-align: center;
             padding: 20px;
-            background-color: rgb(254, 255, 194);
+            background-color: rgb(254, 255, 214);
             color: #cc2828
             
         }
@@ -29,12 +32,42 @@
             display: flex;
         }
 
+        .skills {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .skill-box {
+            background-color: rgba(255, 239, 217, 0.726);
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid #cc2828; 
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
         nav {
             float: left;
             width: 15%;
             height: auto;
 
-            background-color: rgba(255, 230, 198, 0.726);
+            background-color: rgba(255, 239, 217, 0.726);
             padding: 15px;
             margin: 10px;
             border: 2px solid #ccc;
@@ -105,6 +138,8 @@
 
     <div class="container">
 
+    
+
         <nav>
             <h2>탐색 메뉴</h2>
             <ul>
@@ -118,7 +153,7 @@
         <main>
 
             <section id="about">
-                <h2>소개</h2>
+                <h2>🔴 소개</h2>
                 <p>
                     저는 2025년 2월에 전자정보공학부 전자공학전공을 졸업하고, 빅데이터 분석 분야 취업을 목표로 역량을 쌓아가고 있는 김지영입니다. <br>
                     저는 현재 LG U+ Why Not SW CAMP 7기에 참가하며 실무 중심의 데이터 분석 교육을 받고 있으며, 다양한 프로젝트를 통해 경험을 쌓고 있습니다. 
@@ -126,12 +161,18 @@
             </section>
 
             <section id="myskill">
-                <h2>Skill Set & Tools</h2>
-                <p>HTML, CSS, JAVASCRIPT</p>
+                <h2>🔴 Skill Set & Tools</h2>
+                
+
+                <div class="skills">
+                    <div class="skill-box">HTML</div>
+                    <div class="skill-box">CSS</div>
+                    <div class="skill-box">JAVASCRIPT</div>
+                </div>
             </section>
 
             <section id="projects">
-                <h2>프로젝트</h2>
+                <h2>🔴 프로젝트</h2>
                 <p>최근에 진행한 프로젝트 몇 가지를 소개합니다.</p>
                 <ul>
                     <li><strong>겨울 재킷 트렌드 예측 : </strong>겨울 재킷 판매 데이터를 수집, 전처리하여 내년 겨울 유행할 겨울 재킷 예측.</li>
@@ -142,10 +183,10 @@
     
 
             <section id="contact">
-                <h2>연락처</h2>
+                <h2>🔴 연락처</h2>
                 <p>아래에서 저의 성장 블로그를 확인해보실 수 있습니다. 또한 저와 함께 일하고 싶거나 더 알고 싶다면 이메일로 연락해주세요<br>
-                    <a href="https://velog.io/@muneuy311/posts">Velog</a><br>
-                    <a href="https://nid.naver.com/user2/help/naverProfile?m=viewModifyProfile&token_help=cXRxbWuNKpU8BRo0">E-mail</a><br>
+                    <a href="https://velog.io/@muneuy311/posts">👉Velog</a><br>
+                    <a href="https://nid.naver.com/user2/help/naverProfile?m=viewModifyProfile&token_help=cXRxbWuNKpU8BRo0">👉E-mail</a><br>
                 </p>
             </section>
         </main>

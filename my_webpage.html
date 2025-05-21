@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김지영의 포트폴리오</title>
+    
+
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 250, 245);
+            color:black;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(254, 255, 194);
+            color: #cc2828
+            
+        }
+
+        .container {
+            display: flex;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: auto;
+
+            background-color: rgba(255, 230, 198, 0.726);
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        nav h2 {
+            color: #cc2828;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: lower-roman;
+            padding: 0;
+            margin-left: 15px;
+        }
+
+        nav li {
+            display: list-item;
+            margin-right: 15px;
+            margin-bottom: 55px;
+        }
+
+        nav a {
+            color: rgb(21, 32, 29);
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: beige;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgb(255, 71, 71);
+        }
+
+        section {
+            float: left;
+            width: 98%;
+            height: auto;
+
+            padding: 20px;
+            
+        }
+
+        section h2 {
+            color:#cc2828;
+            border-bottom: 2px solid #182129;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgb(254, 255, 194s);
+            color:#182129;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1><strong>김지영</strong>의 포트폴리오</h1>
+        <h3 id="introText">안녕하세요! 저는 데이터 분석 분야 취업을 목표로 성장하고 있는 예비 데이터 분석가 김지영입니다.</h3>
+    </header>
+
+    <div class="container">
+
+        <nav>
+            <h2>탐색 메뉴</h2>
+            <ul>
+                <li><a href="#about" class="nav-link" data-target="about">소개</a></li>
+                <li><a href="#myskill" class="nav-link" data-target="myskill">Skill Set</a></li>
+                <li><a href="#projects" class="nav-link" data-target="projects">프로젝트</a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact">연락처</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="about">
+                <h2>소개</h2>
+                <p>
+                    저는 2025년 2월에 전자정보공학부 전자공학전공을 졸업하고, 빅데이터 분석 분야 취업을 목표로 역량을 쌓아가고 있는 김지영입니다. <br>
+                    저는 현재 LG U+ Why Not SW CAMP 7기에 참가하며 실무 중심의 데이터 분석 교육을 받고 있으며, 다양한 프로젝트를 통해 경험을 쌓고 있습니다. 
+                저의 강점은 <strong>꾸준함과 성실함</strong> 입니다. 작은 목표라도 포기하지 않고 끝까지 해내는 자세로, 데이터 분석가로써의 기반을 차근차근 다져가고 있습니다.</p>
+            </section>
+
+            <section id="myskill">
+                <h2>Skill Set & Tools</h2>
+                <p>HTML, CSS, JAVASCRIPT</p>
+            </section>
+
+            <section id="projects">
+                <h2>프로젝트</h2>
+                <p>최근에 진행한 프로젝트 몇 가지를 소개합니다.</p>
+                <ul>
+                    <li><strong>겨울 재킷 트렌드 예측 : </strong>겨울 재킷 판매 데이터를 수집, 전처리하여 내년 겨울 유행할 겨울 재킷 예측.</li>
+                    <li><strong>TOPST임베디드 보드 기반 프로젝트 : </strong>팀 프로젝트로 TOPST임베디드 보드를 활용해 간단한 음악 생성 시스템 구현.</li>
+                </ul>
+                <p>아직은 시작 단계이지만, 앞으로 더 많은 실전 프로젝트를 통해 다양한 데이터 문제에 도전하며 저만의 인사이트와 경험을 계속해서 확장해 나가고자 합니다.</p>
+            </section>
+    
+
+            <section id="contact">
+                <h2>연락처</h2>
+                <p>아래에서 저의 성장 블로그를 확인해보실 수 있습니다. 또한 저와 함께 일하고 싶거나 더 알고 싶다면 이메일로 연락해주세요<br>
+                    <a href="https://velog.io/@muneuy311/posts">Velog</a><br>
+                    <a href="https://nid.naver.com/user2/help/naverProfile?m=viewModifyProfile&token_help=cXRxbWuNKpU8BRo0">E-mail</a><br>
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 김지영. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll('section h2').forEach(h2 => {
+                    h2.style.color = '#cc2828';
+                    h2.style.fontWeight = 'normal';
+                });
+
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                const targetHeading = targetSection.querySelector('h2');
+
+                targetHeading.style.color = 'blue';
+                targetHeading.style.fontWeight = 'bold';
+            });
+        });
+
+        const textElement = document.querySelector('#introText');
+        const text = textElement.textContent;
+        textElement.textContent = '';
+
+        for (let i = 0; i < text.length; i++) {
+            const span = document.createElement('span');
+            span.textContent = text[i];
+            textElement.appendChild(span);
+        }
+
+        const colors = ['#16b138', '#37c5e9', '#f16af1', '#16b138', '#37c5e9', '#f16af1'];
+        const spans = textElement.querySelectorAll('span');
+        let index = 0;
+
+        function changeColor() {
+            if (index > 0) {
+                spans[index - 1].style.color = '#cc2828'; // 이전 글자는 검정색으로
+            }
+            if (index < spans.length) {
+                spans[index].style.color = colors[index % colors.length];
+                index++;
+                setTimeout(changeColor, 200); // 0.2초마다 색 바꾸기
+            } else {
+      // 끝나면 전체 글자 검정색으로
+                setTimeout(() => {
+                    spans.forEach(span => span.style.color = '#cc2828');
+                }, 500);
+            }
+        }
+
+  changeColor();
+
+    </script>
+
+    
+        
+</body>
+</html>

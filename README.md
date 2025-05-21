@@ -14,3 +14,6 @@ HTML, CSS, JavaScript를 활용하여 나의 포트폴리오 웹페이지를 간
 ### 소개 / Skill Set / 프로젝트 / 연락처
 
 ## Footer
+
+나의 웹페이지를 확인하세요.
+https://jiyoung1634.github.io/webstart/index.html

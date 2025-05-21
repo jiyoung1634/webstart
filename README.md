@@ -18,4 +18,4 @@ HTML, CSS, JavaScript를 활용하여 나의 포트폴리오 웹페이지를 간
 
 
 나의 웹페이지를 확인하세요.
-https://jiyoung1634.github.io/webstart/index.html
+https://jiyoung1634.github.io/webstart/
